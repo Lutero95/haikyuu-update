@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Críticas | Haikyuu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/criticism.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">Haikyuu</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+            <li><a href="#" class="active">Críticas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Críticas</h2>
+        <div class="criticism-form">
+            <form id="criticismForm">
+                <div class="textarea-container">
+                    <textarea 
+                        id="criticismText" 
+                        placeholder="Compartilhe sua opinião sobre Haikyuu..."
+                        maxlength="2500"
+                        required
+                    ></textarea>
+                    <div id="wordCounter" class="word-counter">0/500 palavras</div>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="notification" class="notification">
+        <span class="notification-icon">🏐</span>
+        <span id="notificationText"></span>
+    </div>
+
+    <footer>
+        2025 - Todos os direitos reservados à Martinho Lutero
+    </footer>
+
+    <script src="../js/form_validator.js"></script>
+</body>
+</html>
