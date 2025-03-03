@@ -161,3 +161,61 @@ h2 {
 .criticism-form textarea.error {
     border-color: #FF4444;
 }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .criticism-form {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .criticism-form textarea {
+        height: 180px;
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .notification {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .criticism-form {
+        padding: 15px;
+    }
+
+    .criticism-form textarea {
+        height: 150px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .word-counter {
+        font-size: 14px;
+    }
+
+    .error-tooltip {
+        font-size: 14px;
+        padding: 8px 12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .error-tooltip::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

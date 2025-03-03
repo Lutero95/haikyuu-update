@@ -41,23 +41,44 @@ h2 {
     clear: both;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    .responsive {
+        width: 33.33333%;
+    }
+    
     .gallery img {
         height: 250px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .responsive {
-        width: 49.99999%;
+        width: 50%;
     }
+    
     .gallery img {
-        height: 200px;
+        height: 220px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
     .responsive {
         width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .gallery img {
+        height: 250px;
+    }
+
+    .description {
+        font-size: 18px;
     }
 }
+
